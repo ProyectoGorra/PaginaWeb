@@ -2007,6 +2007,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2122,6 +2127,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -38081,16 +38090,34 @@ var render = function() {
               _vm._s(item.ap_paterno) +
               "     \n            " +
               _vm._s(item.ap_materno) +
-              "               \n            " +
-              _vm._s(item.edad) +
-              "               \n            " +
-              _vm._s(item.direccion) +
-              "               \n            " +
-              _vm._s(item.tipo_sangre) +
-              "               \n            " +
-              _vm._s(item.telefono) +
-              "\n        "
+              "    \n            "
           ),
+          _c("br"),
+          _vm._v(
+            "           \n            Edad: " +
+              _vm._s(item.edad) +
+              "  \n            "
+          ),
+          _c("br"),
+          _vm._v(
+            "             \n            Dirrecion: " +
+              _vm._s(item.direccion) +
+              "   \n            "
+          ),
+          _c("br"),
+          _vm._v(
+            "            \n            Tipo de Sangre: " +
+              _vm._s(item.tipo_sangre) +
+              "   \n            "
+          ),
+          _c("br"),
+          _vm._v(
+            "            \n            Telefono: " +
+              _vm._s(item.telefono) +
+              "\n            "
+          ),
+          _c("br"),
+          _vm._v(" "),
           _c(
             "button",
             {
@@ -38503,27 +38530,45 @@ var render = function() {
       "ul",
       { staticClass: "list-group my-2" },
       _vm._l(_vm.personas, function(item, index) {
-        return _c("li", { key: index, staticClass: "list-group-item" }, [
+        return _c("li", { key: index, staticClass: "list-group-item " }, [
           _c("span", { staticClass: "badge badge-primary float-right" }, [
             _vm._v("\n        " + _vm._s(item.updated_at) + "\n      ")
           ]),
           _vm._v(
             "\n            " +
               _vm._s(item.nombre) +
-              "\n            " +
+              " \n            " +
               _vm._s(item.ap_paterno) +
               "     \n            " +
               _vm._s(item.ap_materno) +
-              "               \n            " +
-              _vm._s(item.edad) +
-              "               \n            " +
-              _vm._s(item.direccion) +
-              "               \n            " +
-              _vm._s(item.correo) +
-              "               \n            " +
-              _vm._s(item.telefono) +
-              "\n        "
+              " \n            "
           ),
+          _c("br"),
+          _vm._v(
+            "            \n            Edad: " +
+              _vm._s(item.edad) +
+              "\n            "
+          ),
+          _c("br"),
+          _vm._v(
+            "               \n            Dirección: " +
+              _vm._s(item.direccion) +
+              "\n            "
+          ),
+          _c("br"),
+          _vm._v(
+            "               \n            Correo: " +
+              _vm._s(item.correo) +
+              "\n            "
+          ),
+          _c("br"),
+          _vm._v(
+            "               \n            Telefono: " +
+              _vm._s(item.telefono) +
+              "\n            "
+          ),
+          _c("br"),
+          _vm._v(" "),
           _c(
             "button",
             {
@@ -50747,6 +50792,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 Vue.component('example-component', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
 Vue.component('personas', __webpack_require__(/*! ./components/PersonasComponent.vue */ "./resources/js/components/PersonasComponent.vue")["default"]);
 Vue.component('invidentes', __webpack_require__(/*! ./components/InvidenteComponent.vue */ "./resources/js/components/InvidenteComponent.vue")["default"]);
+Vue.component('adafruit', __webpack_require__(/*! ./components/AdafruitComponent.vue */ "./resources/js/components/AdafruitComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -50801,6 +50847,38 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/AdafruitComponent.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/AdafruitComponent.vue ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "resources/js/components/AdafruitComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 

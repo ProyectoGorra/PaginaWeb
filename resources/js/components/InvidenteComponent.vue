@@ -50,11 +50,16 @@
           </span>
                 {{item.nombre}}
                 {{item.ap_paterno}}     
-                {{item.ap_materno}}               
-                {{item.edad}}               
-                {{item.direccion}}               
-                {{item.tipo_sangre}}               
-                {{item.telefono}}
+                {{item.ap_materno}}    
+                <br>           
+                Edad: {{item.edad}}  
+                <br>             
+                Dirrecion: {{item.direccion}}   
+                <br>            
+                Tipo de Sangre: {{item.tipo_sangre}}   
+                <br>            
+                Telefono: {{item.telefono}}
+                <br>
             <button class="btn btn-danger btn-sm" @click="eliminarInvidente(item,index)">Eliminar</button>
             <button class="btn btn-warning btn-sm" @click="editarFormulario(item)">Editar</button>       
             </li>

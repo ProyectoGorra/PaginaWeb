@@ -39,4 +39,8 @@ class HomeController extends Controller
 
         return view('token', ['token' => $hashed_token]);
     }
+    public function adafruit()
+    {
+        return view('sensor');
+    }
 }

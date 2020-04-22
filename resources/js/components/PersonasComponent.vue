@@ -1,6 +1,5 @@
 <template>
     <div>
- 
         <form @submit.prevent="editarPersona(persona)" v-if="editarActivo">
         <h3>Editar persona</h3>
             <input type="text" placeholder="Nombre"
@@ -43,18 +42,23 @@
         <h3>Listado de Personas</h3>
         <ul class="list-group my-2">
 
-            <li class="list-group-item" 
+            <li class="list-group-item " 
             v-for="(item,index) in personas" :key="index">
             <span class="badge badge-primary float-right">
             {{item.updated_at}}
           </span>
-                {{item.nombre}}
+                {{item.nombre}} 
                 {{item.ap_paterno}}     
-                {{item.ap_materno}}               
-                {{item.edad}}               
-                {{item.direccion}}               
-                {{item.correo}}               
-                {{item.telefono}}
+                {{item.ap_materno}} 
+                <br>            
+                Edad: {{item.edad}}
+                <br>               
+                Dirección: {{item.direccion}}
+                <br>               
+                Correo: {{item.correo}}
+                <br>               
+                Telefono: {{item.telefono}}
+                <br>
             <button class="btn btn-danger btn-sm" @click="eliminarPersona(item,index)">Eliminar</button>
             <button class="btn btn-warning btn-sm" @click="editarFormulario(item)">Editar</button>       
             </li>

@@ -22,6 +22,8 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('personas', require('./components/PersonasComponent.vue').default);
 Vue.component('invidentes', require('./components/InvidenteComponent.vue').default);
+Vue.component('adafruit', require('./components/AdafruitComponent.vue').default);
+
 
 
 /**

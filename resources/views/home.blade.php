@@ -116,7 +116,7 @@
           </li>
 
           <li>
-              <a href="../user.html">
+              <a href="http://127.0.0.1:8000/sensor">
                   <p>Status de Gorra</p>
               </a>
           </li>

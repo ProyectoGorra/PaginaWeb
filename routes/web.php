@@ -24,5 +24,10 @@ Route::resource('/personas', 'PersonaController')->middleware('auth');
 Route::get('/invidente', 'HomeController@index')->name('invidente');
 Route::resource('/invidentes', 'InvidenteController')->middleware('auth');
 
+Route::get('/sensor', 'HomeController@adafruit')->name('sensor');
+Route::get('/sensor', 'RequestController@sensor')->middleware('auth');
+
+
 Route::get('/token/crear','HomeController@token');
+
 
