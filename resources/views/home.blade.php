@@ -153,9 +153,9 @@
             <div class="col-3">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Ubicación en tiempo real</h5>
-                  <p class="card-text">Ya puedes ver la ubicación de tu familiar invidente en tiempo real.</p>
-                  <a href="http://127.0.0.1:8000/personas" class="btn btn-danger">Ubicación</a>
+                  <h5 class="card-title">Contacto de confianza</h5>
+                  <p class="card-text">Ingresa tu información o la de otro contacto de confianza.</p>
+                  <a href="http://127.0.0.1:8000/personas" class="btn btn-danger">Contacto</a>
                 </div>
               </div>
             </div>

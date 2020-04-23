@@ -26,7 +26,7 @@
                         {{$token}}
                     </div>
                     <div class="card-footer" style="background-color:PAPAYAWHIP;" id="into">
-                        <a id="fond" class="btn btn-primary" href="/home">Volver a inicio</a>
+                        <a id="fond" class="btn btn-primary" href="/">Volver a inicio</a>
                     </div>
                 </div>
             </div>

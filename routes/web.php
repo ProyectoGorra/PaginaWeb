@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/home', 'HomeController@index')->middleware('auth');
+Route::get('/', 'HomeController@index')->middleware('auth');
 
 Auth::routes();
 
@@ -24,9 +24,9 @@ Route::resource('/personas', 'PersonaController')->middleware('auth');
 Route::get('/invidente', 'HomeController@index')->name('invidente');
 Route::resource('/invidentes', 'InvidenteController')->middleware('auth');
 
-Route::get('/sensor', 'HomeController@adafruit')->name('sensor');
-Route::get('/sensor', 'RequestController@sensor')->middleware('auth');
-
+Route::get('/sensor', function () {
+    return view('sensor');
+})->middleware('auth');
 
 Route::get('/token/crear','HomeController@token');
 

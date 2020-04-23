@@ -20,14 +20,14 @@ class RequestController extends Controller
     public function getUsr(){
         return User::all();
     }
-    
+
     public function sensor(Request $request)
     {
         $client = new Client(self::guzzleClient());
         $promise = $client->requestAsync('GET', 'https://io.adafruit.com/api/v2/VictorGP/feeds/counter/data', [
             'headers' => [
                 'Authorization' => 'Bearer d3e4404cdd0eec9e60e30a1df20bb0303c14d89a5ce9f0073dad444e8709f05a',
-                'X-AIO-Key' => 'aio_SaIw01zkDnR8SFZIKmeOvrJLwuyt'
+                'X-AIO-Key' => ''
             ],
             'form_params' => [
                 'datum' => ['value' => '1'],

@@ -23,10 +23,10 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm" style="background-color:MOCCASIN;">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/home') }}">
+                <a class="navbar-brand" href="{{ url('/') }}">
                     WiFi-Cap
                 </a>
-                <a class="navbar-brand" href="{{ url('/home') }}">
+                <a class="navbar-brand" href="{{ url('/') }}">
                     Inicio
                 </a>
                 <a class="navbar-brand" href="http://127.0.0.1:8000/personas">
@@ -34,6 +34,9 @@
                 </a>
                 <a class="navbar-brand" href="http://127.0.0.1:8000/invidentes">
                     Invidentes
+                </a>                
+                <a class="navbar-brand" href="http://127.0.0.1:8000/sensor">
+                    Monitoreo
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
