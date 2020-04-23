@@ -27,7 +27,7 @@ class RequestController extends Controller
         $promise = $client->requestAsync('GET', 'https://io.adafruit.com/api/v2/VictorGP/feeds/counter/data', [
             'headers' => [
                 'Authorization' => 'Bearer d3e4404cdd0eec9e60e30a1df20bb0303c14d89a5ce9f0073dad444e8709f05a',
-                'X-AIO-Key' => ''
+                'X-AIO-Key' => '' //aio_Usem85FSuuOS3Ja6DrCWC2BAhSKy <-- aquí va el apy key
             ],
             'form_params' => [
                 'datum' => ['value' => '1'],

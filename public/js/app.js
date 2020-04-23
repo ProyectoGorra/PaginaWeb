@@ -1936,7 +1936,8 @@ __webpack_require__.r(__webpack_exports__);
         method: 'get',
         url: 'https://io.adafruit.com/api/v2/VictorGP/feeds/counter/data',
         params: {
-          "X-AIO-Key": ""
+          "X-AIO-Key": "" //aio_Usem85FSuuOS3Ja6DrCWC2BAhSKy <- aqui va el apy key
+
         }
       }).then(function (response) {
         self.response = response;
@@ -37728,7 +37729,7 @@ var render = function() {
     _vm._l(_vm.response.data, function(response) {
       return _c("li", { key: response.id, staticClass: "list-group-item" }, [
         _c("span", { staticClass: "badge badge-primary float-right" }, [
-          _vm._v("\n    " + _vm._s(response.created_at) + "\n  ")
+          _vm._v("\n    Fecha: " + _vm._s(response.created_at) + "\n  ")
         ]),
         _vm._v("\n        Distancia proxima de obstaculo: "),
         _c("br"),

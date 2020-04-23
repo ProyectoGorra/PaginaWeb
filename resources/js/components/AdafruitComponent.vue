@@ -3,7 +3,7 @@
             <li class="list-group-item" 
             v-for="response in response.data" :key="response.id">
             <span class="badge badge-primary float-right">
-            {{response.created_at}}
+            Fecha: {{response.created_at}}
           </span>
                 Distancia proxima de obstaculo: <br> {{response.value}} Centimetros    
             </li>
@@ -27,7 +27,7 @@ export default {
             method: 'get',
             url: 'https://io.adafruit.com/api/v2/VictorGP/feeds/counter/data',
             params: {
-                "X-AIO-Key": ""
+                "X-AIO-Key": "" //aio_Usem85FSuuOS3Ja6DrCWC2BAhSKy <- aqui va el apy key
             },
         })
         .then(function (response) {
